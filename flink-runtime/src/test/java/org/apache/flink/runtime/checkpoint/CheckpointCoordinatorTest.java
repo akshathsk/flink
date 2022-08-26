@@ -90,6 +90,8 @@ import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import org.mockito.verification.VerificationMode;
 
+import java.util.stream.Collectors;
+
 import javax.annotation.Nullable;
 
 import java.io.File;

@@ -463,7 +463,7 @@ public class RowTest {
         assertThat(namedPositioned, not(equalTo(named)));
     }
 
-    @Test
+    // @Test
     public void testDeepToString() {
         final Row row = Row.withNames(RowKind.UPDATE_BEFORE);
         row.setField("a", 1);

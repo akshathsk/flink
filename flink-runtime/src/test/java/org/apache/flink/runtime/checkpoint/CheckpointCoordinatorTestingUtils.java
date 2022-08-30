@@ -77,6 +77,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -478,7 +479,7 @@ public class CheckpointCoordinatorTestingUtils {
     static class CheckpointRecorderTaskManagerGateway extends SimpleAckingTaskManagerGateway {
 
         private final Map<ExecutionAttemptID, List<TriggeredCheckpoint>> triggeredCheckpoints =
-                new HashMap<>();
+                new LinkedHashMap<>();
 
         private final Map<ExecutionAttemptID, List<NotifiedCheckpoint>>
                 notifiedCompletedCheckpoints = new HashMap<>();
